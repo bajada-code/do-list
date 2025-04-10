@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+li span {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+li input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+}
+
+.editing input[type="text"] {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0.3rem;
+}
+
+.actions button {
+  margin-left: 0.5rem;
+  background-color: #dc3545;
+}
+
+.actions button.edit {
+  background-color: #007bff;
+}
+
+.actions button:hover {
+  opacity: 0.8;
+}
